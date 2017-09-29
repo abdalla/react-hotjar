@@ -1,4 +1,4 @@
-var hotjar = require('./react-hotjar');
+var hotjar = require('./src/react-hotjar');
 
 function initialize(id, sv) {
 	hotjar(id, sv);
