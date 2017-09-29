@@ -4,4 +4,4 @@ function initialize(id, sv) {
 	hotjar(id, sv);
 }
 
-module.exports = initialize;
+module.exports = { initialize: initialize };
