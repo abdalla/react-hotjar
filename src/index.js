@@ -1,7 +1,7 @@
 var hotjar = require('./react-hotjar');
 
-function initialize(id, hjsv) {
-	hotjar(id, hjsv);
+function initialize(id, sv) {
+	hotjar(id, sv);
 }
 
 module.exports = initialize;

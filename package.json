@@ -4,11 +4,7 @@
 	"description": "Small component to implement Hotjar into your react application",
 	"main": "index.js",
 	"scripts": {
-		"test": "-",
-		"build": "webpack",
-		"lint": "eslint src webpack.config.js test --ext .js,.jsx",
-		"preversion": "npm run lint",
-		"postversion": "git push && git push --tags && npm publish"
+		"test": "-"
 	},
 	"repository": {
 		"type": "git",
