@@ -1,6 +1,5 @@
 module.exports = function(id, sv) {
 	(function(h, o, t, j, a, r) {
-		console.log(id, sv);
 		h.hj =
 			h.hj ||
 			function() {
