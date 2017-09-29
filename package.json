@@ -1,6 +1,6 @@
 {
 	"name": "react-hotjar",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Small component to implement Hotjar into your react application",
 	"main": "index.js",
 	"scripts": {
@@ -10,7 +10,10 @@
 		"type": "git",
 		"url": "git+https://github.com/abdalla/react-hotjar.git"
 	},
-	"keywords": ["HotJar", "React"],
+	"keywords": [
+		"HotJar",
+		"React"
+	],
 	"author": "Carlos Abdalla",
 	"license": "MIT",
 	"bugs": {
