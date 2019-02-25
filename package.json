@@ -1,6 +1,6 @@
 {
 	"name": "react-hotjar",
-	"version": "1.0.11",
+	"version": "2.0.0",
 	"description": "Small component to implement Hotjar into your react application",
 	"main": "index.js",
 	"scripts": {
@@ -21,6 +21,6 @@
 	},
 	"homepage": "https://github.com/abdalla/react-hotjar#readme",
 	"devDependencies": {
-		"eslint": "^4.8.0"
+		"eslint": "^5.14.1"
 	}
 }
