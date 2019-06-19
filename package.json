@@ -1,5 +1,5 @@
 {
-  "name": "react-hotjar",
+  "name": "@abdalla/react-hotjar",
   "version": "2.0.1",
   "description": "Small component to implement Hotjar into your react application",
   "main": "index.js",
