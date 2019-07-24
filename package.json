@@ -1,5 +1,5 @@
 {
-	"name": "@abdalla/react-hotjar",
+	"name": "react-hotjar",
 	"version": "2.0.2",
 	"description": "Small component to implement Hotjar into your react application",
 	"main": "index.js",
@@ -20,9 +20,6 @@
 		"url": "https://github.com/abdalla/react-hotjar/issues"
 	},
 	"homepage": "https://github.com/abdalla/react-hotjar#readme",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
 	"devDependencies": {
 		"eslint": "^5.14.1"
 	}
