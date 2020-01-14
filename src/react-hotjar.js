@@ -6,10 +6,15 @@ module.exports = function(id, sv) {
 				(h.hj.q = h.hj.q || []).push(arguments);
 			};
 		h._hjSettings = { hjid: id, hjsv: sv };
-		a = o.getElementsByTagName('head')[0];
-		r = o.createElement('script');
-		r.async = 1;
-		r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-		a.appendChild(r);
+		h._scriptPath = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+		if(!document.querySelector(
+			'script[src*="' + h._scriptPath + '"]',
+		)){
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script');
+			r.async = 1;
+			r.src = h._scriptPath;
+			a.appendChild(r);
+		}
 	})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
 };
