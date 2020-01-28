@@ -8,7 +8,7 @@ module.exports = function(id, sv) {
 		h._hjSettings = { hjid: id, hjsv: sv };
 		h._scriptPath = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
 		if(!document.querySelector(
-			'script[src*="' + h._scriptPath + '"]',
+			'script[src*="' + h._scriptPath + '"]'
 		)){
 			a = o.getElementsByTagName('head')[0];
 			r = o.createElement('script');
