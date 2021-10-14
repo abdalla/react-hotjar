@@ -11,7 +11,8 @@ npm install react-hotjar --save
 import { hotjar } from 'react-hotjar';
 
 hotjar.initialize(hjid, hjsv);
-<!-- Optional identify call -->
+
+// Optional identify call
 hotjar.identify('USER_ID', { userProperty: 'value' });
 ```
 - hjid: Stands for 'Hotjar ID' - Your site's ID. This is the ID which tells Hotjar which site settings it should load and where it should save the data collected.

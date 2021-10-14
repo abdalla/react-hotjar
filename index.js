@@ -6,7 +6,11 @@ module.exports = {
 			hotjar(id, sv);
 		},
 		identify: function identify(userId, properties) {
-			hotjar('identify', userId, properties);
+			if (!window.hj) {
+				throw new Error('Hotjar must be initialized before calling identify');
+			}
+
+			window.hj('identify', userId, properties);
 		}
 	}
 };
