@@ -12,12 +12,11 @@ import { hotjar } from 'react-hotjar';
 
 hotjar.initialize(hjid, hjsv);
 
-// Optional identify call
+// Identify the user
 hotjar.identify('USER_ID', { userProperty: 'value' });
 
 // Add an event
-hotjar.event('button-click-a');
-hotjar.event(['button-click-a', 'button-click-b']);
+hotjar.event('button-click');
 
 // Update SPA state
 hotjar.stateChange('/my/page');
