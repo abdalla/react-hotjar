@@ -17,11 +17,11 @@ export module hotjar {
   ): void;
 
   /**
-   * Add one or more events to the current session
-   * @param events Event(s) to add to the session
+   * Add an event to the current session
+   * @param event Event to add to the session
    */
   export function event(
-    events: string | string[]
+    event: string
   ): void;
 
   /**
