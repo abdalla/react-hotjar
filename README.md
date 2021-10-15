@@ -14,6 +14,13 @@ hotjar.initialize(hjid, hjsv);
 
 // Optional identify call
 hotjar.identify('USER_ID', { userProperty: 'value' });
+
+// Add an event
+hotjar.event('button-click-a');
+hotjar.event(['button-click-a', 'button-click-b']);
+
+// Update SPA state
+hotjar.stateChange('/my/page');
 ```
 - hjid: Stands for 'Hotjar ID' - Your site's ID. This is the ID which tells Hotjar which site settings it should load and where it should save the data collected.
 
