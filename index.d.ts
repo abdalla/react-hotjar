@@ -15,4 +15,20 @@ export module hotjar {
     userId: string,
     properties: Record<string, any>
   ): void;
+
+  /**
+   * Add an event to the current session
+   * @param event Event to add to the session
+   */
+  export function event(
+    event: string
+  ): void;
+
+  /**
+   * Update the state of the SPA
+   * @param relativePath Current page URL (such as `product/red-trainer`)
+   */
+  export function stateChange(
+    relativePath: string,
+  ): void;
 }
