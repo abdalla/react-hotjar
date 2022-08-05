@@ -20,6 +20,11 @@ hotjar.event('button-click');
 
 // Update SPA state
 hotjar.stateChange('/my/page');
+
+// Check if Hotjar has been initialized before calling its methods
+if (hotjar.initialized()) {
+  hotjar.identify('USER_ID', { userProperty: 'value' });
+}
 ```
 - hjid: Stands for 'Hotjar ID' - Your site's ID. This is the ID which tells Hotjar which site settings it should load and where it should save the data collected.
 

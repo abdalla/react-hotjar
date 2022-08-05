@@ -7,6 +7,11 @@ export module hotjar {
   export function initialize(hjid: number, hjsv: number): void;
 
   /**
+   * Check if Hotjar has been initialized
+   */
+  export function initialized(): boolean;
+
+  /**
    * Identify user
    * @param userId Unique ID of a user
    * @param properties Additional properties describing your user
