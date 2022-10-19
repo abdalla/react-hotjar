@@ -21,6 +21,6 @@
 	},
 	"homepage": "https://github.com/abdalla/react-hotjar#readme",
 	"devDependencies": {
-		"eslint": "8.0.1"
+		"eslint": "8.25.0"
 	}
 }
