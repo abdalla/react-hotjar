@@ -1,11 +1,11 @@
-module.exports = function(id, sv) {
+module.exports = function(id, sv, debug=false) {
 	(function(h, o, t, j, a, r) {
 		h.hj =
 			h.hj ||
 			function() {
 				(h.hj.q = h.hj.q || []).push(arguments);
 			};
-		h._hjSettings = { hjid: id, hjsv: sv };
+		h._hjSettings = { hjid: id, hjsv: sv, hjDebug: debug };
 		h._scriptPath = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
 		if(!document.querySelector(
 			'script[src*="' + h._scriptPath + '"]'
