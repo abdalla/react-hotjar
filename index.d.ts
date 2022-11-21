@@ -17,7 +17,7 @@ export module hotjar {
    * @param properties Additional properties describing your user
    */
   export function identify(
-    userId: string,
+    userId: string | null,
     properties: Record<string, any>
   ): void;
 
