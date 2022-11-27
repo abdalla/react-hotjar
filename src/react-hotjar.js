@@ -16,5 +16,5 @@ module.exports = function(id, sv, debug=false) {
 			r.src = h._scriptPath;
 			a.appendChild(r);
 		}
-	})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+	})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 };
