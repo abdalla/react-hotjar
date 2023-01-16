@@ -5,7 +5,7 @@ export module hotjar {
    * @param hjsv The version of the Tracking Code you are using. This is only needed if Hotjar ever updates the Tracking Code and needs to discontinue older ones. Knowing which version your site includes allows hotjar team to contact you and inform you accordingly.
    * @param debug [debug=false] Used to enable debug mode
    */
-  export function initialize(hjid: number, hjsv: number, debug: boolean): void;
+  export function initialize(hjid: number, hjsv: number, debug?: boolean): void;
 
   /**
    * Check if Hotjar has been initialized
