@@ -15,7 +15,7 @@ module.exports = {
 			hotjar(id, sv);
 		},
 		initialized: function initialized() {
-			return typeof window.hj === 'function';
+			return typeof window !== 'undefined' && typeof window?.hj === 'function';
 		},
 		identify: function identify(userId, properties) {
 			hj('identify', userId, properties);
