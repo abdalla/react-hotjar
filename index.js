@@ -1,27 +1,26 @@
-import hotjar from './src/react-hotjar';
+import hotjarLib from './src/react-hotjar';
 
-function hj() {
-	const params = Array.prototype.slice.call(arguments);
+const hj = (...params) => {
 	if (!window.hj) {
 		throw new Error('Hotjar is not initialized');
 	}
-	window.hj.apply(undefined, params);
-}
+	window.hj(...params);
+};
 
 export const hotjar = {
-	initialize: function initialize(id, sv) {
-		hotjar(id, sv);
+	initialize(id, sv) {
+		hotjarLib(id, sv);
 	},
-	initialized: function initialized() {
+	initialized() {
 		return typeof window !== 'undefined' && typeof window.hj === 'function';
 	},
-	identify: function identify(userId, properties) {
+	identify(userId, properties) {
 		hj('identify', userId, properties);
 	},
-	event: function event(event) {
+	event(event) {
 		hj('event', event);
 	},
-	stateChange: function stateChange(relativePath) {
+	stateChange(relativePath) {
 		hj('stateChange', relativePath);
 	},
 };
