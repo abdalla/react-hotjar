@@ -1,4 +1,4 @@
-import hotjar from './src/react-hotjar';
+import initHotjar from './src/react-hotjar';
 
 function hj() {
 	const params = Array.prototype.slice.call(arguments);
@@ -10,7 +10,7 @@ function hj() {
 
 export const hotjar = {
 	initialize: function initialize(id, sv) {
-		hotjar(id, sv);
+		initHotjar(id, sv);
 	},
 	initialized: function initialized() {
 		return typeof window !== 'undefined' && typeof window.hj === 'function';
