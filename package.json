@@ -4,7 +4,6 @@
 	"description": "Small component to implement Hotjar into your react application",
 	"main": "index.js",
 	"scripts": {
-		"test": "-",
 		"release": "standard-version",
 		"commit": "git-cz"
 	},
