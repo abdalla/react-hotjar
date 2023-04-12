@@ -1,0 +1,34 @@
+{
+	"types": [
+		{
+			"type": "feat",
+			"section": "Features"
+		},
+		{
+			"type": "fix",
+			"section": "Bug Fixes"
+		},
+		{
+			"type": "chore",
+			"hidden": true
+		},
+		{
+			"type": "docs",
+			"section": "Documentation"
+		},
+		{
+			"type": "style",
+			"hidden": true
+		},
+		{
+			"type": "refactor",
+			"section": "Refactoring"
+		},
+		{
+			"type": "test",
+			"hidden": true
+		}
+	],
+	"commitAll": true,
+	"message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+}
