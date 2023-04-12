@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "-",
-		"release": "standard-version"
+		"release": "standard-version",
+		"commit": "git-cz"
 	},
 	"repository": {
 		"type": "git",
@@ -20,8 +21,15 @@
 	"bugs": {
 		"url": "https://github.com/abdalla/react-hotjar/issues"
 	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
 	"homepage": "https://github.com/abdalla/react-hotjar#readme",
 	"devDependencies": {
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "8.25.0",
 		"standard-version": "^9.5.0"
 	}
