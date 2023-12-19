@@ -1,6 +1,6 @@
 {
 	"name": "react-hotjar",
-	"version": "6.1.3",
+	"version": "6.2.0",
 	"description": "Small component to implement Hotjar into your react application",
 	"main": "index.js",
 	"scripts": {
