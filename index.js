@@ -1,4 +1,4 @@
-import hotjarLib from './src/react-hotjar';
+const hotjarLib = require('./src/react-hotjar');
 
 const hj = (...params) => {
 	if (!window.hj) {
@@ -7,20 +7,22 @@ const hj = (...params) => {
 	window.hj(...params);
 };
 
-export const hotjar = {
-	initialize(id, sv) {
-		hotjarLib(id, sv);
-	},
-	initialized() {
-		return typeof window !== 'undefined' && typeof window.hj === 'function';
-	},
-	identify(userId, properties) {
-		hj('identify', userId, properties);
-	},
-	event(event) {
-		hj('event', event);
-	},
-	stateChange(relativePath) {
-		hj('stateChange', relativePath);
+module.exports = {
+	hotjar: {
+		initialize: function initialize(id, sv) {
+			hotjarLib(id, sv);
+		},
+		initialized: function initialized() {
+			return typeof window !== 'undefined' && typeof window?.hj === 'function';
+		},
+		identify: function identify(userId, properties) {
+			hj('identify', userId, properties);
+		},
+		event: function event(event) {
+			hj('event', event);
+		},
+		stateChange: function stateChange(relativePath) {
+			hj('stateChange', relativePath);
+		}
 	},
 };
