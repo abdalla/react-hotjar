@@ -1,4 +1,4 @@
-module.exports = function(id, sv, debug=false) {
+module.exports = function({id, sv, debug = false, nonce}) {
 	(function(h, o, t, j, a, r) {
 		h.hj =
 			h.hj ||
@@ -12,6 +12,7 @@ module.exports = function(id, sv, debug=false) {
 		)){
 			a = o.getElementsByTagName('head')[0];
 			r = o.createElement('script');
+			if (nonce) r.setAttribute('nonce', nonce);
 			r.async = 1;
 			r.src = h._scriptPath;
 			a.appendChild(r);
