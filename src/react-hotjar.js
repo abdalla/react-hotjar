@@ -1,4 +1,4 @@
-module.exports = function({id, sv, debug = false, nonce}) {
+module.exports = function({id, sv, debug = false, nonce = null}) {
 	(function(h, o, t, j, a, r) {
 		h.hj =
 			h.hj ||
