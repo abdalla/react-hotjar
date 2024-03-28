@@ -9,8 +9,8 @@ const hj = (...params) => {
 
 module.exports = {
 	hotjar: {
-		initialize: function initialize(id, sv) {
-			hotjarLib(id, sv);
+		initialize: function initialize({id, sv, debug, nonce}) {
+			hotjarLib({id, sv, debug, nonce});
 		},
 		initialized: function initialized() {
 			return typeof window !== 'undefined' && typeof window?.hj === 'function';
